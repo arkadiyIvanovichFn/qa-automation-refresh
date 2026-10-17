@@ -17,6 +17,7 @@
         <junit.version>5.10.2</junit.version>
         <lombok.version>1.18.30</lombok.version>
         <postgres.version>42.7.4</postgres.version>
+        <datafaker.version>2.1.0</datafaker.version>
     </properties>
 
     <dependencies>
@@ -45,6 +46,14 @@
             <groupId>org.postgresql</groupId>
             <artifactId>postgresql</artifactId>
             <version>${postgres.version}</version>
+        </dependency>
+
+        <!-- Datafaker — библиотека для генерации случайных тестовых данных -->
+        <dependency>
+            <groupId>net.datafaker</groupId>
+            <artifactId>datafaker</artifactId>
+            <version>${datafaker.version}</version>
+            <scope>test</scope>  <!-- только для тестов -->
         </dependency>
     </dependencies>
 

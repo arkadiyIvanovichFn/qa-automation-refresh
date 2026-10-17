@@ -23,11 +23,12 @@ public class LoginPage {
     // 2. МЕТОДЫ ДЕЙСТВИЙ
 
     /**
-     * Открывает страницу логина.
-     * @return тот же объект LoginPage (для цепочки вызовов, если нужно)
+     * Открывает страницу логина по переданному URL
+     * @param url адрес страницы (берётся из config.properties)
+     * @return тот же объект LoginPage
      */
-    public LoginPage openPage() {
-        open("https://www.saucedemo.com/");
+    public LoginPage openPage(String url) {
+        open(url);  // открываем переданный URL вместо захардкоженного
         return this;
     }
 
